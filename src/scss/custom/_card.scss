@@ -319,10 +319,6 @@
     // Why the margin?
     // margin-left: $card-padding/3;
     // margin-right: $card-padding/3;
-    .card-body {
-      padding-left: 0;
-      padding-right: 0;
-    }
 
     &.shadow .card-body,
     &.border .card-body,
@@ -361,7 +357,7 @@
     max-height: 80px;
     width: 80px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
     right: 32px;
@@ -720,8 +716,6 @@ a.read-more {
   }
   .card {
     border: none;
-    // border-right: 1px solid $card-border-color;
-    margin-right: -$grid-gutter-width * 0.5;
     &.card-bg,
     &.card-img {
       margin: 0;

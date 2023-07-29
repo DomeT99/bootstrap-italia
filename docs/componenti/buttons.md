@@ -44,13 +44,13 @@ Gli stili definiti da Bootstrap Italia utilizzano un naming consistente con Boot
 {% comment %}Example name: Varianti di colore{% endcomment %}
 {% capture example %}
 
-<div class="py-1">{% for color in site.data.theme-colors %}{% if color.name == "primary" or color.name == "secondary" %}
+<div class="py-1">{% for color in site.data.theme-colors %}
 <div class="btn-example">
   <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>
   <button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }} outline</button>
   <button type="button" class="btn btn-{{ color.name }} disabled">{{ color.name | capitalize }} disabled</button>
-  <button type="button" class="btn btn-outline-{{ color.name }} disabled">{{ color.name | capitalize }} o. disabled</button>
-</div>{% endif %}{% endfor %}
+  <button type="button" class="btn btn-outline-{{ color.name }} disabled">{{ color.name | capitalize }} outline disabled</button>
+</div>{% endfor %}
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -81,6 +81,7 @@ La classe `.disabled` usa `pointer-events: none` per provare a disabilitare l'at
   <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>
   <button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }} outline</button>
   <button type="button" class="btn btn-{{ color.name }} disabled">{{ color.name | capitalize }} disabled</button>
+  <button type="button" class="btn btn-outline-{{ color.name }} disabled">{{ color.name | capitalize }} outline disabled</button>
 </div>{% endif %}{% endfor %}</div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -116,7 +117,7 @@ La classe `.disabled` usa `pointer-events: none` per provare a disabilitare l'at
 
 <button class="btn btn-danger btn-sm btn-icon btn-me">
   <span>Icon Button Sm</span>
-  <svg class="icon icon-secondary ms-1">
+  <svg class="icon icon-white ms-1">
   <use
         href="{{
           site.baseurl
@@ -127,7 +128,7 @@ La classe `.disabled` usa `pointer-events: none` per provare a disabilitare l'at
 
 <button class="btn btn-info btn-xs btn-icon ms-1">
   <span>Icon Button Xs</span>
-  <svg class="icon icon-danger">
+  <svg class="icon icon-white">
   <use
         href="{{
           site.baseurl
@@ -164,8 +165,8 @@ Inoltre è possibile applicare un contorno cerchiato dell'icona utilizzando un c
 </button>
 
 <button class="btn btn-danger btn-sm btn-icon btn-me">
-<span class="rounded-icon rounded-secondary">
-<svg class="icon icon-white">
+<span class="rounded-icon">
+<svg class="icon icon-danger">
 <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-user"></use>
 </svg>
 </span>
@@ -173,8 +174,8 @@ Inoltre è possibile applicare un contorno cerchiato dell'icona utilizzando un c
 </button>
 
 <button class="btn btn-secondary btn-xs btn-icon">
-<span class="rounded-icon rounded-danger">
-<svg class="icon icon-white">
+<span class="rounded-icon">
+<svg class="icon icon-secondary">
 <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-user"></use>
 </svg>
 </span>
@@ -218,7 +219,7 @@ Per creare pulsanti o gruppi di pulsanti a tutta larghezza, come i _block button
 {% capture example %}
 
 <div class="d-grid gap-2">
-  <button class="btn btn-primary btn-me" type="button">Primary</button>
+  <button class="btn btn-primary" type="button">Primary</button>
   <button class="btn btn-secondary" type="button">Secondary</button>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -229,7 +230,7 @@ In questo caso è stata implemenentata una variante responsive che visualizza i 
 {% capture example %}
 
 <div class="d-grid gap-2 d-md-block">
-  <button class="btn btn-primary btn-me" type="button">Primary</button>
+  <button class="btn btn-primary" type="button">Primary</button>
   <button class="btn btn-secondary" type="button">Secondary</button>
 </div>
 {% endcapture %}{% include example.html content=example %}

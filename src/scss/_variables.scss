@@ -38,7 +38,7 @@ $font-family-sans-serif: 'Titillium Web', Geneva, Tahoma, sans-serif !default;
 $font-family-monospace: 'Roboto Mono', monospace !default;
 $font-family-base: $font-family-sans-serif;
 $text-color: $gray-700 !default;
-$text-muted: $gray-tertiary !default;
+$text-muted: $color-text-muted !default;
 $letter-spacing-base: 0;
 $line-height-base: 1.5;
 $font-weight-base: 300;
@@ -334,7 +334,7 @@ $pager-item-margin-right: 5px;
 $pager-item-current-color: $primary !default;
 $pager-item-current-border: 1px solid $primary !default;
 $pager-font-size: 0.8888888888888888rem; // 16px
-$pager-font-weight: 600;
+$pager-font-weight: 700;
 $pager-font-color: $secondary !default;
 $pager-hover-color: $primary !default;
 $pager-icon-color: $primary !default;
@@ -631,7 +631,7 @@ $transfer-height: 240px;
 
 //Timeline
 $timeline-width: 4px;
-$timeline-padding: ($v-gap * 3) - calc($grid-gutter-width / 2);
+$timeline-padding: 12px;
 $timeline-border-color: linear-gradient(0deg, $primary 0%, hsl(210, 100%, 20%) 100%) !default; // UI kit
 $timeline-pin-size: $v-gap * 3;
 $timeline-pin-background: hsl(210, 100%, 20%); // color-blue-20
