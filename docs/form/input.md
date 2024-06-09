@@ -17,7 +17,7 @@ description: Elementi e stili per la creazione di input accessibili e responsivi
 
 ## Esempi di campi di input
 
-Per il corretto funzionamento degli elementi di tipo `<input>` è di fondamentale importanza l'utilizzo uno degli appositi attributi `type` (ad esempio, `email` per l'inserimento di indirizzi email o `number` per informazioni numeriche), in modo da sfruttare i controlli nativi dei borowser più recenti come la verifica dell'email, l'utilizzo di metodo di input numerico ed altro.
+Per il corretto funzionamento degli elementi di tipo `<input>` è di fondamentale importanza l'utilizzo uno degli appositi attributi `type` (ad esempio, `email` per l'inserimento di indirizzi email o `number` per informazioni numeriche), in modo da sfruttare i controlli nativi dei browser più recenti come la verifica dell'email, l'utilizzo di metodo di input numerico ed altro.
 
 Per l'inserimento guidato di campi di tipo numerico si può anche utilizzare l'elemento dedicato che fornisce migliorie per la validazione e per l'esperienza complessiva, descritto alla [pagina dedicata all'input numerico]({{ site.baseurl }}/docs/form/input-numerico/).
 
@@ -26,6 +26,13 @@ Breaking feature dalla versione **2.2.0**
 
 Quando si utilizza l'attributo `placeholder` o l'input parte già valorizzato assicurarsi di aggiungere alla label la classe **`active`** per impedire la sovrapposizione della label al campo.
 
+{% endcapture %}{% include callout.html content=callout type="danger" %}
+
+{% capture callout %}
+Breaking feature dalla versione **2.8.0**
+
+Rimosso l'elemento con classe `.input-group-prepend` in favore dell'elemento 
+con classe `.input-group-text`.
 {% endcapture %}{% include callout.html content=callout type="danger" %}
 
 {% comment %}Example name: Varianti per tipo {% endcomment %}
@@ -82,7 +89,7 @@ In caso di necessità, è anche possibile utilizzare un ulteriore contenuto test
 
 #### Associazione del testo di aiuto con gli elementi del modulo form
 
-Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo form a cui si riferisce utilizzando l'attributo `aria-describedby`. Ciò garantirà che le tecnologie assistive, come gli screenreader, leggano questo testo di aiuto quando l'utente avrà il focus sull'elemento.
+Il testo di aiuto deve essere esplicitamente associato agli elementi del modulo form a cui si riferisce utilizzando l'attributo `aria-describedby`. Ciò garantirà che le tecnologie assistive, come gli screenreader, leggano questo testo di aiuto quando l'utente avrà il focus sull'elemento.
 
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
@@ -107,27 +114,21 @@ Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo 
 {% capture example %}
 <div class="form-group">
   <div class="input-group">
-    <div class="input-group-prepend">
-      <div class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg></div>
-    </div>
+    <span class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg></span>
     <label for="input-group-1">Con Etichetta</label>
     <input type="text" class="form-control" id="input-group-1" name="input-group-1">
   </div>
 </div>
 <div class="form-group">
   <div class="input-group">
-    <div class="input-group-prepend">
-      <div class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg></div>
-    </div>
+    <span class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg></span>
     <label class="active" for="input-group-2">Con Etichetta e placeholder</label>
     <input type="text" class="form-control" id="input-group-2" name="input-group-2" placeholder="Lorem Ipsum">
   </div>
 </div>
 <div class="form-group">
   <div class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg></div>
-      </div>
+      <span class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg></span>
       <label for="input-group-3">Con Etichetta e pulsante "primary"</label>
       <input type="text" class="form-control" id="input-group-3" name="input-group-3">
       <div class="input-group-append">
@@ -160,7 +161,7 @@ Per rendere più semplice l'inserimento della password, l'elemento è stato dota
   </tbody>
 </table>
 
-E' possibile personalizzare i testi dei messaggi riguardanti la robustezza della password usando gli attributi data dell'elemento `small.form-text`.
+È possibile personalizzare i testi dei messaggi riguardanti la robustezza della password usando gli attributi data dell'elemento `small.form-text`.
 
 <table class="table table-bordered table-striped">
   <thead>
@@ -517,7 +518,7 @@ Includendo l'elemento all'interno di un `.form-group`, la label assumerà lo ste
 {% capture example %}
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Esempio di area di testo</label>
-    <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 {% endcapture %}{% include example.html content=example %}
 

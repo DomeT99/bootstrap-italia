@@ -20,7 +20,7 @@ description: Blocca la posizione di un elemento rispetto al viewport.
   }
 </style>
 
-Un elemento Affix rimane ancorato ad una specifica area della pagina. Viene spesso utilizzato per i menù di navigazione o per i pulsanti di condivisione dei social network, per ancorarli in una specifica area mentre il contenuto della pagina viene scrollato in alto o in basso.
+Un elemento Affix rimane ancorato ad una specifica area della pagina. Viene spesso utilizzato per i menu di navigazione o per i pulsanti di condivisione dei social network, per ancorarli in una specifica area mentre il contenuto della pagina viene scrollato in alto o in basso.
 
 È importante ricordare che un elemento Affix non dovrebbe nascondere il contenuto di una pagina, specialmente quando la dimensione del viewport è ridotta.
 
@@ -102,7 +102,7 @@ Un elemento Affix a sviluppo orizzontale può essere ancorato alla parte alta o 
 
 ### Horizontal Affix top
 
-Per ancorare un elemento a svliuppo orizzontale alla parte alta della pagina è sufficiente applicare la classe `.affix-parent` all'elemento che lo contiene e la classe `.affix-top` all'elemento stesso.
+Per ancorare un elemento a sviluppo orizzontale alla parte alta della pagina è sufficiente applicare la classe `.affix-parent` all'elemento che lo contiene e la classe `.affix-top` all'elemento stesso.
 
 {% comment %}Example name: Orizzontale in alto{% endcomment %}
 {% capture example %}

@@ -178,7 +178,7 @@ Non dimenticare il testo esplicativo dedicato agli Screen Reader all'interno di 
 
 Quando non è possibile stabilire una percentuale di progressione utilizzare una Progress Bar di tipo indeterminato, aggiungendo una classe `.progress-indeterminate` al contenitore `.progress` ed eliminando gli attributi `aria-` dalla Progress Bar.
 
-{% comment %}Example name: Progresso intederminato{% endcomment %}
+{% comment %}Example name: Progresso indeterminato{% endcomment %}
 {% capture example %}
 <div class="progress progress-indeterminate">
   <span class="visually-hidden">In elaborazione...</span>
@@ -271,6 +271,32 @@ Per ottenere una versione ridotta dello Spinner aggiungere allo stesso la classe
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <p class="mb-3"><strong>Large</strong></p>
+      <div class="progress-spinner size-lg">
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <p class="mb-3"><strong>Large Attivo</strong></p>
+      <div class="progress-spinner progress-spinner-active size-lg">
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+      <p class="mb-3"><strong>Extra-large</strong></p>
+      <div class="progress-spinner size-xl">
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+      <p class="mb-3"><strong>Extra-large attivo</strong></p>
+      <div class="progress-spinner progress-spinner-active size-xl">
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+  </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -309,6 +335,40 @@ Aggiungendo la classe `.progress-spinner-double` allo Spinner si ottiene un'anim
     <div class="col-6 col-lg-3 mt-3 mt-lg-0">
       <p class="mb-3"><strong>Doppio small attivo</strong></p>
       <div class="progress-spinner progress-spinner-double size-sm progress-spinner-active">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <p class="mb-3"><strong>Doppio large</strong></p>
+      <div class="progress-spinner progress-spinner-double size-lg">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <p class="mb-3"><strong>Doppio large attivo</strong></p>
+      <div class="progress-spinner progress-spinner-double size-lg progress-spinner-active">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+      <p class="mb-3"><strong>Doppio extra-large</strong></p>
+      <div class="progress-spinner progress-spinner-double size-xl">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+      <p class="mb-3"><strong>Doppio extra-large attivo</strong></p>
+      <div class="progress-spinner progress-spinner-double size-xl progress-spinner-active">
         <div class="progress-spinner-inner"></div>
         <div class="progress-spinner-inner"></div>
         <span class="visually-hidden">Caricamento...</span>

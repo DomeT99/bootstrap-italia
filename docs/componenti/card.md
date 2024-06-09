@@ -36,7 +36,7 @@ Esempio di card semplice con titolo e testo:
       <div class="card">
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ Esempio di card semplice con titolo e testo:
       <div class="card">
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@ Esempio di card semplice con titolo e testo:
       <div class="card">
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@ Esempio di card semplice con titolo e testo:
       <div class="card">
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -116,14 +116,12 @@ Quando si utilizzano link con label generiche come “Leggi tutto” o “Leggi 
             <span class="data">10/12/{{ 'now' | date: "%Y" }}</span>
           </div>
           <h3 class="card-title big-heading h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <span class="card-signature">di Federico De Paolis</span>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
           </a>
         </div>
       </div>
@@ -147,15 +145,13 @@ Per inserire la categorizzazione con relativa icona, usare l'elemento `.category
       <div class="card">
         <div class="card-body">
           <div class="categoryicon-top">
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-file"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-file"></use></svg>
             <span class="text">Categoria<br>nome</span>
           </div>
           <a href="#">
             <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
           </a>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -164,7 +160,7 @@ Per inserire la categorizzazione con relativa icona, usare l'elemento `.category
 </div>
 {% endcapture %}{% include example.html content=example %}
 
-Un'altro esempio di card contenente intestazione (in questo caso numero di files
+Un altro esempio di card contenente intestazione (in questo caso numero di files
 presenti) e icona: la struttura è uguale alla card precedente, per l'intestazione
 è sufficiente usare l'elemento `.categoryicon-top` ed inserire al suo interno gli
 elementi come da esempio.
@@ -181,16 +177,14 @@ segue il paragrafo.
       <div class="card">
         <div class="card-body">
           <div class="categoryicon-top">
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
             <span class="text">(2) File</span>
           </div>
           <a href="#">
             <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
             <p class="card-subtitle h6">Sottotitolo</p>
           </a>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="simple-link" href="#">Link <span class="visually-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span></a>
         </div>
       </div>
@@ -216,13 +210,11 @@ Le card con ombreggiatura sono caratterizzate dalle classi:
       <div class="card card-bg">
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span>
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
           </a>
         </div>
       </div>
@@ -253,18 +245,14 @@ il div contenente l'icona è di classe `.top-icon`.
       <div class="card card-bg card-big">
         <div class="card-body">
           <div class="top-icon">
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-card"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-card"></use></svg>
           </div>
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span>
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
           </a>
         </div>
       </div>
@@ -290,20 +278,16 @@ Per creare un bordo di colore primario a chiusura card, potete utilizzare la cla
       <div class="card card-bg card-big border-bottom-card">
         <div class="flag-icon"></div>
         <div class="etichetta">
-          <svg class="icon">
-            <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-settings"></use>
-          </svg>
+          <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-settings"></use></svg>
           <span>Sviluppo</span>
         </div>
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span>
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
           </a>
         </div>
       </div>
@@ -333,7 +317,7 @@ Utilizzate la classe `.no-after` applicata al div `.card` se volete ridurre lo s
             <span class="data">10/10/{{'now' | date: "%Y"}}</span>
           </div>
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="it-card-footer">
             <span class="card-signature">di Federico De Paolis</span>
             <a class="btn btn-outline-primary btn-sm" href="#">Link Button <span class="visually-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span></a>
@@ -371,13 +355,11 @@ Qualora le proporzioni non fossero esatte, l'immagine occuperà il massimo dell'
         </div>
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</h3>
-          <p class="card-text"></p>
+          <p class="card-text font-serif"></p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-            </svg>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
           </a>
         </div>
       </div>
@@ -397,13 +379,11 @@ Qualora le proporzioni non fossero esatte, l'immagine occuperà il massimo dell'
         </div>
         <div class="card-body">
           <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</h3>
-          <p class="card-text"></p>
+          <p class="card-text font-serif"></p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
-            <svg class="icon">
-              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-            </svg></a>
+            <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg></a>
         </div>
       </div>
     </div>
@@ -426,13 +406,11 @@ Qualora le proporzioni non fossero esatte, l'immagine occuperà il massimo dell'
           </div>
           <div class="card-body">
             <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</h3>
-            <p class="card-text"></p>
+            <p class="card-text font-serif"></p>
               <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
-              <svg class="icon">
-                <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-              </svg></a>
+              <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg></a>
           </div>
         </div>
       </div>
@@ -455,13 +433,11 @@ Qualora le proporzioni non fossero esatte, l'immagine occuperà il massimo dell'
           </div>
           <div class="card-body">
             <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</h3>
-            <p class="card-text"></p>
+            <p class="card-text font-serif"></p>
               <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
-              <svg class="icon">
-                <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-              </svg></a>
+              <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg></a>
           </div>
         </div>
       </div>
@@ -515,7 +491,7 @@ Come per ogni elemento, è possibile aggiungere le classi `rounded` o `shadow` p
   <div class="card card-teaser">
     <div class="card-body">
       <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </div>
   <!--end card-->
@@ -523,7 +499,7 @@ Come per ogni elemento, è possibile aggiungere le classi `rounded` o `shadow` p
   <div class="card card-teaser rounded shadow">
     <div class="card-body">
       <h3 class="card-title h5 no_toc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </div>
   <!--end card-->
@@ -531,12 +507,10 @@ Come per ogni elemento, è possibile aggiungere le classi `rounded` o `shadow` p
   <div class="card card-teaser rounded shadow">
     <div class="card-body">
       <h3 class="card-title h5 no_toc">
-        <svg class="icon">
-          <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-clip"></use>
-        </svg>
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-clip"></use></svg>
         <a href="#">Lorem ipsum dolor sit amet</a>
       </h3>
-      <div class="card-text">
+      <div class="card-text font-serif">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</p>
       </div>
     </div>

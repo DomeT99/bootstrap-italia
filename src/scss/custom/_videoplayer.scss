@@ -12,10 +12,9 @@
   }
   .vjs-control-bar {
     background-color: $primary;
-    font-size: 1.1em;
+    font-size: 1rem;
     @include media-breakpoint-up(lg) {
       min-height: 48px;
-      font-size: 1rem;
     }
   }
 }
@@ -36,5 +35,27 @@
     @include media-breakpoint-up(lg) {
       width: 75ch;
     }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .vjs-remaining-time {
+    display: none;
+  }
+
+  .video-js .vjs-progress-control {
+    display: none;
+  }
+
+  .vjs-picture-in-picture-control {
+    display: none !important;
+  }
+
+  .video-js .vjs-control {
+    width: 48px;
+  }
+
+  .vjs-control-bar {
+    justify-content: space-around;
   }
 }

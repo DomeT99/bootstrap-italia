@@ -2,7 +2,9 @@
 
 .acceptoverlayable {
   position: relative;
-  min-height: 400px;
+  &.show {
+    min-height: 450px;
+  }
 }
 
 .acceptoverlay {
@@ -34,7 +36,7 @@
   &.acceptoverlay-primary {
     background-color: $primary;
     &.show {
-      opacity: 0.9;
+      opacity: 0.97;
     }
   }
 
@@ -51,7 +53,7 @@
 
   h4 {
     text-align: center;
-    font-size: 2.222rem;
+    font-size: 2.25rem;
   }
 
   p {

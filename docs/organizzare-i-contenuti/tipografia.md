@@ -10,6 +10,17 @@ Bootstrap imposta alcune proprietà di base per la tipografia e gli stili dei
 link. Quando è necessario un maggiore controllo, fornisce delle
 [classi di utilità testuali]({{ site.baseurl }}/docs/organizzare-i-contenuti/testo/).
 
+{% capture callout %}
+Cosa cambia nella tipografia dalla versione **2.7.0** della libreria
+
+- reimpostata la dimensione del carattere di base su `16px` su `body`.
+- sostituite le unità `em` con `rem`.
+- aggiornati i valori `font-size` per corrispondere al nuovo calcolo dell'unità `rem`.
+- rimosse le variabili obsolete e inutilizzate da `_variables.scss`
+- variabili specifiche dei componenti aggiornate e allineate al `kit UI v3.0`
+
+{% endcapture %}{% include callout.html content=callout type="danger" %}
+
 ## Famiglie di Caratteri
 
 Come descritto in dettaglio nel capitolo sullo UI Kit, le Linee Guida di Design
@@ -60,21 +71,12 @@ Per il suo utilizzo, è sufficiente usare la classe `font-monospace`.
 
 ## Tipografia responsive
 
-Bootstrap Italia ridimensiona testo e alcune propietà dei componenti modificando
-il `font-size` dell'elemento radice, con una media query che imposta dimensioni
+Bootstrap Italia ridimensiona la dimensione di intestazioni e testo modificando
+le proprietà `font-size` e `line-height` dell'elemento tramite una media query che imposta dimensioni
 lievemente maggiori per schermi con dimensioni maggiori di _576px_. Questa
 impostazione, unita all'utilizzo di dimensioni in `rem` o in semplici valori
 numerici all'interno del CSS, fa sì che testo e altre proprietà occupino più
-spazio quando lo schermo lo permette:
-
-```scss
-html {
-  font-size: 16px;
-  @include media-breakpoint-up(sm) {
-    font-size: 18px;
-  }
-}
-```
+spazio quando lo schermo lo permette.
 
 ## Intestazioni
 
@@ -166,7 +168,7 @@ evidenza un'intestazione di tipo `<h1>`, si può prendere in considerazione l'us
 della classe `.display-1`, che restituirà una dimensione sensibilmente più
 grande.
 
-{% comment %}Example name: Intestazioni{% endcomment %}
+{% comment %}Example name: Intestazione h1 in evidenza{% endcomment %}
 {% capture example %}
 <h1 class="no_toc display-1">Intestazione di tipo h1 in evidenza</h1>
 {% endcapture %}{% include example.html content=example %}
@@ -285,7 +287,7 @@ di un `<blockquote class="blockquote">` come la citazione.
 ### Citare una fonte
 
 Aggiungi un `<footer class="blockquote-footer">` per identificare la fonte.
-Includi il nome delle fonte di origine in `<cite>`.
+Includi il nome della fonte di origine in `<cite>`.
 
 {% comment %}Example name: Citazioni con fonte{% endcomment %}
 {% capture example %}

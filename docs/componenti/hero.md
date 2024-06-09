@@ -21,7 +21,7 @@ Il componente Hero può contenere:
 
 #### Accessibilità
 
-Valutare attentantamente l'opportunità di utilizzare più hero nella stessa pagina.
+Valutare attentamente l'opportunità di utilizzare più hero nella stessa pagina.
 
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
@@ -251,9 +251,7 @@ Aggiungere alla section `.it-hero-wrapper` la classe `.it-bottom-overlapping-con
                       <a class="read-more" href="#">
                         <span class="text">Leggi di più</span>
                         <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span>
-                        <svg class="icon">
-                            <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use>
-                        </svg>
+                        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
                       </a>
                     </div>
                   </div>
